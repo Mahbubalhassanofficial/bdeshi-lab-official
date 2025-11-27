@@ -1,245 +1,156 @@
 import Navbar from "../../components/Navbar";
-import Link from "next/link";
-import { motion } from "framer-motion";
 
-const founder = {
-  name: "Engineer Mahbub Hassan",
-  role: "Founder & Director",
-  link: "/team/founder",
+export const metadata = {
+  title: "Team | B'Deshi Emerging Research Lab",
 };
 
-// ---------------- CURRENT MEMBERS (Mock, Replace Later) ----------------
-
-const currentMembers = [
-  {
-    name: "Md. Rayhan Uddin",
-    role: "Undergraduate Researcher",
-    research: [
-      "Travel Behavior Analysis",
-      "AI in Transport",
-      "ML Modeling",
-    ],
-    photo: "/placeholder.jpg",
-  },
-  {
-    name: "Nusrat Tabassum",
-    role: "Undergraduate Researcher",
-    research: [
-      "Sustainable Transport",
-      "GIS",
-      "Simulation Engineering",
-    ],
-    photo: "/placeholder.jpg",
-  },
-  {
-    name: "Faisal Ahmed",
-    role: "Research Volunteer",
-    research: [
-      "Machine Learning",
-      "Autonomous Vehicles",
-      "Safety Modeling",
-    ],
-    photo: "/placeholder.jpg",
-  },
-  {
-    name: "Jannatul Ferdous",
-    role: "Research Collaborator",
-    research: [
-      "Urban Mobility",
-      "Transport Planning",
-      "Data Analytics",
-    ],
-    photo: "/placeholder.jpg",
-  },
-  {
-    name: "Samin Al Rafi",
-    role: "Undergraduate Research Assistant",
-    research: [
-      "Digital Twins",
-      "CAV Simulation",
-      "Traffic Engineering",
-    ],
-    photo: "/placeholder.jpg",
-  },
-  {
-    name: "Rahnuma Rahman",
-    role: "Graduate Research Trainee",
-    research: [
-      "Data-Driven Transport",
-      "XAI",
-      "Sustainable Mobility",
-    ],
-    photo: "/placeholder.jpg",
-  },
-];
-
-// ---------------- PREVIOUS MEMBERS (From Your Details) ----------------
-
-const previousMembers = [
-  {
-    name: "Abdullah Al Nafees",
-    role: "Research Assistant",
-    research: [
-      "Transportation Optimization",
-      "Smart Cities",
-      "Sustainable Infrastructure",
-      "Data Analytics",
-    ],
-    photo: "/placeholder.jpg",
-  },
-  {
-    name: "Hridoy Deb Mahin",
-    role: "Research Assistant",
-    research: [
-      "ITS",
-      "Connected Autonomous Vehicles (CAV)",
-      "Connected Vehicle Technology",
-      "Road Safety",
-      "Urban Mobility",
-    ],
-    photo: "/placeholder.jpg",
-  },
-  {
-    name: "Arpita Paul",
-    role: "Research Assistant",
-    research: [
-      "Transport Optimization",
-      "Smart Cities",
-      "Travel Behavior",
-      "Traffic Safety",
-      "MaaS",
-      "Data Analytics",
-    ],
-    photo: "/placeholder.jpg",
-  },
-  {
-    name: "Mehjabin Farhana",
-    role: "Research Assistant",
-    research: [
-      "Transportation Planning",
-      "GIS & Remote Sensing",
-      "Traffic Simulation",
-      "Sustainable Transport",
-      "Environmental Planning",
-      "Smart City Development",
-    ],
-    photo: "/placeholder.jpg",
-  },
-  {
-    name: "Syeda Tamzida Akter",
-    role: "Undergraduate Research Student",
-    research: [
-      "Transportation Systems",
-      "Structural Engineering",
-      "Machine Learning",
-      "Data Analysis",
-    ],
-    photo: "/placeholder.jpg",
-  },
-  {
-    name: "Aneeca Farzana",
-    role: "Graduate Research Assistant",
-    research: [
-      "ITS",
-      "CAV",
-      "LLM",
-      "Machine Learning",
-      "GIS & Remote Sensing",
-      "Sustainable Transport Systems",
-    ],
-    photo: "/placeholder.jpg",
-  },
-];
-
 export default function TeamPage() {
+  const founder = {
+    name: "Engineer Mahbub Hassan",
+    role: "Founder & Director",
+    photo: "/founder.jpg", // placeholder (you will replace)
+    link: "/founder",
+  };
+
+  const currentMembers = [
+    {
+      name: "Mock Member 1",
+      role: "Research Assistant",
+      photo: "/member-placeholder.png",
+    },
+    {
+      name: "Mock Member 2",
+      role: "Research Assistant",
+      photo: "/member-placeholder.png",
+    },
+    {
+      name: "Mock Member 3",
+      role: "Undergraduate Research Student",
+      photo: "/member-placeholder.png",
+    },
+    {
+      name: "Mock Member 4",
+      role: "Graduate Research Assistant",
+      photo: "/member-placeholder.png",
+    },
+    {
+      name: "Mock Member 5",
+      role: "Research Assistant",
+      photo: "/member-placeholder.png",
+    },
+    {
+      name: "Mock Member 6",
+      role: "Research Assistant",
+      photo: "/member-placeholder.png",
+    },
+  ];
+
+  const previousMembers = [
+    {
+      name: "Abdullah Al Nafees",
+      role: "Research Assistant",
+      photo: "/member-placeholder.png",
+    },
+    {
+      name: "Hridoy Deb Mahin",
+      role: "Research Assistant",
+      photo: "/member-placeholder.png",
+    },
+    {
+      name: "Arpita Paul",
+      role: "Research Assistant",
+      photo: "/member-placeholder.png",
+    },
+    {
+      name: "Mehjabin Farhana",
+      role: "Research Assistant",
+      photo: "/member-placeholder.png",
+    },
+    {
+      name: "Syeda Tamzida Akter",
+      role: "Undergraduate Research Student",
+      photo: "/member-placeholder.png",
+    },
+    {
+      name: "Aneeca Farzana",
+      role: "Graduate Research Assistant",
+      photo: "/member-placeholder.png",
+    },
+  ];
+
   return (
     <main className="min-h-screen">
       <Navbar />
 
-      <section className="container pt-32 pb-20">
-        <h1 className="text-4xl font-extrabold text-labLight mb-8">
-          Our Research Team
+      <section className="container pt-40 pb-20">
+        <h1 className="text-4xl font-extrabold text-labLight mb-10">
+          Our Team
         </h1>
 
-        {/* ---------- FOUNDER SECTION ---------- */}
-        <h2 className="text-2xl font-bold text-labGold mb-4">Founder</h2>
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          className="bg-white/10 border border-white/20 p-6 rounded-xl mb-12"
-        >
-          <Link href={founder.link}>
-            <p className="text-labBlue text-xl font-bold hover:underline cursor-pointer">
-              {founder.name}
-            </p>
-            <p className="text-labLight/70">{founder.role}</p>
-          </Link>
-        </motion.div>
-
-        {/* ---------- CURRENT MEMBERS ---------- */}
-        <h2 className="text-2xl font-bold text-labGold mb-4">Current Members</h2>
-
-        <div className="grid md:grid-cols-3 gap-8 mb-16">
-          {currentMembers.map((m, i) => (
-            <motion.div
-              key={i}
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: i * 0.1 }}
-              className="bg-white/10 border border-white/20 rounded-xl p-6 backdrop-blur shadow-lg"
-            >
-              <div className="w-full h-44 bg-white/5 rounded-lg flex items-center justify-center text-labLight/60">
-                Photo Coming Soon
+        {/* Founder */}
+        <div className="mb-20">
+          <h2 className="text-3xl font-bold text-labBlue mb-6">Founder</h2>
+          <a href={founder.link} className="block w-fit">
+            <div className="flex items-center gap-6 bg-white/10 p-6 rounded-xl border border-white/20 shadow-lg hover:bg-white/20 transition">
+              <img
+                src={founder.photo}
+                alt="Founder"
+                className="w-28 h-28 rounded-xl object-cover bg-white/20"
+              />
+              <div>
+                <h3 className="text-xl font-bold text-labLight">
+                  {founder.name}
+                </h3>
+                <p className="text-labLight/70">{founder.role}</p>
               </div>
-
-              <h3 className="text-lg font-bold text-labBlue mt-4">{m.name}</h3>
-              <p className="text-labLight/70">{m.role}</p>
-
-              <div className="flex flex-wrap gap-2 mt-3">
-                {m.research.map((tag, idx) => (
-                  <span
-                    key={idx}
-                    className="px-3 py-1 bg-white/10 border border-white/20 rounded-full text-xs text-labLight/80"
-                  >
-                    {tag}
-                  </span>
-                ))}
-              </div>
-            </motion.div>
-          ))}
+            </div>
+          </a>
         </div>
 
-        {/* ---------- PREVIOUS MEMBERS ---------- */}
-        <h2 className="text-2xl font-bold text-labGold mb-4">Previous Members</h2>
+        {/* Current Members */}
+        <div className="mb-20">
+          <h2 className="text-3xl font-bold text-labBlue mb-6">
+            Current Members
+          </h2>
 
-        <div className="grid md:grid-cols-3 gap-8">
-          {previousMembers.map((m, i) => (
-            <motion.div
-              key={i}
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: i * 0.1 }}
-              className="bg-white/10 border border-white/20 rounded-xl p-6 backdrop-blur shadow-lg"
-            >
-              <div className="w-full h-44 bg-white/5 rounded-lg flex items-center justify-center text-labLight/60">
-                Photo Coming Soon
+          <div className="grid md:grid-cols-3 gap-8">
+            {currentMembers.map((m, i) => (
+              <div
+                key={i}
+                className="bg-white/10 p-6 rounded-xl border border-white/20 shadow-lg text-center"
+              >
+                <img
+                  src={m.photo}
+                  className="w-24 h-24 mx-auto rounded-xl object-cover mb-4 bg-white/20"
+                />
+                <h3 className="text-lg font-semibold text-labLight">{m.name}</h3>
+                <p className="text-labLight/60">{m.role}</p>
               </div>
+            ))}
+          </div>
+        </div>
 
-              <h3 className="text-lg font-bold text-labBlue mt-4">{m.name}</h3>
-              <p className="text-labLight/70">{m.role}</p>
+        {/* Previous Members */}
+        <div className="pb-20">
+          <h2 className="text-3xl font-bold text-labBlue mb-6">
+            Previous Members
+          </h2>
 
-              <div className="flex flex-wrap gap-2 mt-3">
-                {m.research.map((tag, idx) => (
-                  <span
-                    key={idx}
-                    className="px-3 py-1 bg-white/10 border border-white/20 rounded-full text-xs text-labLight/80"
-                  >
-                    {tag}
-                  </span>
-                ))}
+          <div className="grid md:grid-cols-3 gap-8">
+            {previousMembers.map((m, i) => (
+              <div
+                key={i}
+                className="bg-white/10 p-6 rounded-xl border border-white/20 shadow-lg text-center"
+              >
+                <img
+                  src={m.photo}
+                  className="w-24 h-24 mx-auto rounded-xl object-cover mb-4 bg-white/20"
+                />
+                <h3 className="text-lg font-semibold text-labLight">{m.name}</h3>
+                <p className="text-labLight/60">{m.role}</p>
               </div>
-            </motion.div>
-          ))}
+            ))}
+          </div>
         </div>
       </section>
     </main>
