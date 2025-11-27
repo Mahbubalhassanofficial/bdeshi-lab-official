@@ -7,14 +7,15 @@ export default function Navbar() {
   const pathname = usePathname();
 
   const links = [
-    { name: "Home", href: "/" },
-    { name: "About", href: "/about" },
-    { name: "Tools", href: "/tools" },
-    { name: "Team", href: "/team" },    // ⭐ ADD THIS LINE
-    { name: "Research", href: "/research" },
-    { name: "Publications", href: "/publications" },
-    { name: "Contact", href: "/contact" },
-  ];
+  { name: "Home", href: "/" },
+  { name: "About", href: "/about" },
+  { name: "Team", href: "/team" },   // ✅ New
+  { name: "Tools", href: "/tools" },
+  { name: "Research", href: "/research" },
+  { name: "Publications", href: "/publications" },
+  { name: "Contact", href: "/contact" },
+];
+
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-[#0A0F1F]/90 backdrop-blur-md border-b border-white/10">
