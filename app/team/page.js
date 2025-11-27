@@ -1,11 +1,7 @@
 "use client";
 
 import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";   // ✅ Correct absolute import
-
-export const metadata = {
-  title: "Team | B'Deshi Emerging Research Lab",
-};
+import Footer from "@/components/Footer";
 
 export default function TeamPage() {
   const founder = {
@@ -109,7 +105,7 @@ export default function TeamPage() {
         </div>
       </section>
 
-      <Footer /> {/* ✅ Footer will now display correctly */}
+      <Footer />
     </main>
   );
 }
