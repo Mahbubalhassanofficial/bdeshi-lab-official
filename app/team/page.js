@@ -1,5 +1,5 @@
 import Navbar from "../../components/Navbar";
-
+import Footer from "../../components/Footer";
 export const metadata = {
   title: "Team | B'Deshi Emerging Research Lab",
 };
@@ -153,6 +153,8 @@ export default function TeamPage() {
           </div>
         </div>
       </section>
+     <Footer /> 
     </main>
   );
 }
+     
