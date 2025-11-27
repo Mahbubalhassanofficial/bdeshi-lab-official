@@ -10,6 +10,7 @@ export default function Navbar() {
     { name: "Home", href: "/" },
     { name: "About", href: "/about" },
     { name: "Tools", href: "/tools" },
+    { name: "Team", href: "/team" },    // ⭐ ADD THIS LINE
     { name: "Research", href: "/research" },
     { name: "Publications", href: "/publications" },
     { name: "Contact", href: "/contact" },
