@@ -1,5 +1,6 @@
 import Navbar from "../../components/Navbar";
-import Footer from "../../components/Footer";
+import Footer from "../../components/Footer";   // ✅ IMPORTANT: Add this import
+
 export const metadata = {
   title: "Team | B'Deshi Emerging Research Lab",
 };
@@ -8,74 +9,26 @@ export default function TeamPage() {
   const founder = {
     name: "Engineer Mahbub Hassan",
     role: "Founder & Director",
-    photo: "/founder.jpg", // placeholder (you will replace)
+    photo: "/founder.jpg",
     link: "/founder",
   };
 
   const currentMembers = [
-    {
-      name: "Mock Member 1",
-      role: "Research Assistant",
-      photo: "/member-placeholder.png",
-    },
-    {
-      name: "Mock Member 2",
-      role: "Research Assistant",
-      photo: "/member-placeholder.png",
-    },
-    {
-      name: "Mock Member 3",
-      role: "Undergraduate Research Student",
-      photo: "/member-placeholder.png",
-    },
-    {
-      name: "Mock Member 4",
-      role: "Graduate Research Assistant",
-      photo: "/member-placeholder.png",
-    },
-    {
-      name: "Mock Member 5",
-      role: "Research Assistant",
-      photo: "/member-placeholder.png",
-    },
-    {
-      name: "Mock Member 6",
-      role: "Research Assistant",
-      photo: "/member-placeholder.png",
-    },
+    { name: "Mock Member 1", role: "Research Assistant", photo: "/member-placeholder.png" },
+    { name: "Mock Member 2", role: "Research Assistant", photo: "/member-placeholder.png" },
+    { name: "Mock Member 3", role: "Undergraduate Research Student", photo: "/member-placeholder.png" },
+    { name: "Mock Member 4", role: "Graduate Research Assistant", photo: "/member-placeholder.png" },
+    { name: "Mock Member 5", role: "Research Assistant", photo: "/member-placeholder.png" },
+    { name: "Mock Member 6", role: "Research Assistant", photo: "/member-placeholder.png" },
   ];
 
   const previousMembers = [
-    {
-      name: "Abdullah Al Nafees",
-      role: "Research Assistant",
-      photo: "/member-placeholder.png",
-    },
-    {
-      name: "Hridoy Deb Mahin",
-      role: "Research Assistant",
-      photo: "/member-placeholder.png",
-    },
-    {
-      name: "Arpita Paul",
-      role: "Research Assistant",
-      photo: "/member-placeholder.png",
-    },
-    {
-      name: "Mehjabin Farhana",
-      role: "Research Assistant",
-      photo: "/member-placeholder.png",
-    },
-    {
-      name: "Syeda Tamzida Akter",
-      role: "Undergraduate Research Student",
-      photo: "/member-placeholder.png",
-    },
-    {
-      name: "Aneeca Farzana",
-      role: "Graduate Research Assistant",
-      photo: "/member-placeholder.png",
-    },
+    { name: "Abdullah Al Nafees", role: "Research Assistant", photo: "/member-placeholder.png" },
+    { name: "Hridoy Deb Mahin", role: "Research Assistant", photo: "/member-placeholder.png" },
+    { name: "Arpita Paul", role: "Research Assistant", photo: "/member-placeholder.png" },
+    { name: "Mehjabin Farhana", role: "Research Assistant", photo: "/member-placeholder.png" },
+    { name: "Syeda Tamzida Akter", role: "Undergraduate Research Student", photo: "/member-placeholder.png" },
+    { name: "Aneeca Farzana", role: "Graduate Research Assistant", photo: "/member-placeholder.png" },
   ];
 
   return (
@@ -153,8 +106,8 @@ export default function TeamPage() {
           </div>
         </div>
       </section>
-     <Footer /> 
+
+      <Footer />   {/* ✅ Now footer will show */}
     </main>
   );
 }
-     
