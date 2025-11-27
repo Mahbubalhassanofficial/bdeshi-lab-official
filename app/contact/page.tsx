@@ -1,4 +1,5 @@
 import Navbar from "../../components/Navbar";
+import Footer from "../../components/Footer";
 
 export default function ContactPage() {
   return (
@@ -16,7 +17,6 @@ export default function ContactPage() {
           interdisciplinary mobility research engagements.
         </p>
 
-        {/* CONTACT BOX */}
         <div className="bg-white/10 p-8 rounded-2xl border border-white/20 shadow-lg backdrop-blur max-w-xl">
 
           <h2 className="text-2xl font-semibold text-labBlue mb-4">Email</h2>
@@ -46,15 +46,13 @@ export default function ContactPage() {
           </h2>
           <p className="text-labLight/70 text-sm leading-relaxed">
             B'Deshi Emerging Research Lab is an independent, student-founded platform 
-            created and managed voluntarily by Engr. Mahbub Hassan (MSc in Civil 
+            created and voluntarily maintained by Engr. Mahbub Hassan (MSc in Civil 
             Engineering, Transportation).  
             <br /><br />
             <span className="font-semibold text-labGold">
               This lab is not affiliated, endorsed, or officially connected with 
-              Chulalongkorn University.
-            </span>  
-            It operates solely as a personal initiative to support research, student 
-            mentorship, and academic collaboration.
+              Chulalongkorn University or any institution.
+            </span>
           </p>
 
           <h2 className="text-2xl font-semibold text-labBlue mt-8 mb-4">
@@ -92,6 +90,8 @@ export default function ContactPage() {
 
         </div>
       </section>
+
+      <Footer />
     </main>
   );
 }
