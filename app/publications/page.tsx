@@ -1,4 +1,5 @@
 import Navbar from "../../components/Navbar";
+import Footer from "../../components/Footer";
 
 export default function PublicationsPage() {
   const publications = [
@@ -120,7 +121,6 @@ export default function PublicationsPage() {
           intelligent mobility systems.
         </p>
 
-        {/* PUBLICATION LIST */}
         <div className="space-y-6">
           {publications.map((pub, i) => (
             <div
@@ -145,6 +145,8 @@ export default function PublicationsPage() {
           ))}
         </div>
       </section>
+
+      <Footer />
     </main>
   );
 }
