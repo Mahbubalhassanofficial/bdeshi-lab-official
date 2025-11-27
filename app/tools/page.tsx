@@ -1,4 +1,5 @@
 import Navbar from "../../components/Navbar";
+import Footer from "../../components/Footer";
 
 export default function ToolsPage() {
   return (
@@ -16,65 +17,12 @@ export default function ToolsPage() {
           survey analytics, and intelligent mobility.
         </p>
 
-        {/* TOOLS GRID */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-
-          {/* Tool Card */}
-          <div className="bg-white/10 p-6 rounded-2xl border border-white/20 shadow-lg backdrop-blur">
-            <h2 className="text-xl font-bold text-labBlue mb-2">TripAI</h2>
-            <p className="text-labLight/75">
-              Trip generation, distribution, behavior modeling and synthetic 
-              datasets using AI and statistical foundations.
-            </p>
-          </div>
-
-          {/* Tool Card */}
-          <div className="bg-white/10 p-6 rounded-2xl border border-white/20 shadow-lg backdrop-blur">
-            <h2 className="text-xl font-bold text-labBlue mb-2">EcoRouteAI</h2>
-            <p className="text-labLight/75">
-              AI-driven emissions estimation for routing, CO₂ savings analysis, 
-              and sustainable mobility planning.
-            </p>
-          </div>
-
-          {/* Tool Card */}
-          <div className="bg-white/10 p-6 rounded-2xl border border-white/20 shadow-lg backdrop-blur">
-            <h2 className="text-xl font-bold text-labBlue mb-2">FleetAI</h2>
-            <p className="text-labLight/75">
-              Optimization of bus fleet operations, headways, dispatching, and 
-              route performance using ML + simulation.
-            </p>
-          </div>
-
-          {/* Tool Card */}
-          <div className="bg-white/10 p-6 rounded-2xl border border-white/20 shadow-lg backdrop-blur">
-            <h2 className="text-xl font-bold text-labBlue mb-2">SurveyAI</h2>
-            <p className="text-labLight/75">
-              Synthetic survey generator with latent variables, demographics, 
-              SmartPLS-friendly data, and advanced statistical checks.
-            </p>
-          </div>
-
-          {/* Tool Card */}
-          <div className="bg-white/10 p-6 rounded-2xl border border-white/20 shadow-lg backdrop-blur">
-            <h2 className="text-xl font-bold text-labBlue mb-2">TwinBuilder</h2>
-            <p className="text-labLight/75">
-              Digital twin configurations for SUMO simulations, including 
-              pedestrians, CAV/AV, intersections, and mixed traffic.
-            </p>
-          </div>
-
-          {/* Tool Card */}
-          <div className="bg-white/10 p-6 rounded-2xl border border-white/20 shadow-lg backdrop-blur">
-            <h2 className="text-xl font-bold text-labBlue mb-2">MaaS Analyzer</h2>
-            <p className="text-labLight/75">
-              Mobility-as-a-Service analytics with behavior modeling, adoption 
-              prediction, and clustering insights.
-            </p>
-          </div>
-
+          {/* tool cards (keep as you have them) */}
         </div>
       </section>
+
+      <Footer />
     </main>
   );
 }
