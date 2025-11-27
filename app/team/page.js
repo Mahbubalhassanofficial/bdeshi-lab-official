@@ -1,5 +1,7 @@
-import Navbar from "../../components/Navbar";
-import Footer from "../../components/Footer";   // ✅ IMPORTANT: Add this import
+"use client";
+
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";   // ✅ Correct absolute import
 
 export const metadata = {
   title: "Team | B'Deshi Emerging Research Lab",
@@ -107,7 +109,7 @@ export default function TeamPage() {
         </div>
       </section>
 
-      <Footer />   {/* ✅ Now footer will show */}
+      <Footer /> {/* ✅ Footer will now display correctly */}
     </main>
   );
 }
